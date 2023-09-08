@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일\ArrVer">
+      <UniqueIdentifier>{e7b81a67-6289-4c4c-9fff-d0ad96b7e1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\NodeVer">
+      <UniqueIdentifier>{88c0b45c-b415-4edc-b9a2-7d81a16e2872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\FuntionAll">
+      <UniqueIdentifier>{5bc00810-bda1-4ad0-b537-a5773b199ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\NodeVer\FuntionNode">
+      <UniqueIdentifier>{8b2632f8-b05f-4f73-9a07-029b397fa22a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\ArrVer\FuntionArr">
+      <UniqueIdentifier>{d035d7de-282e-47c1-b2f8-1a6c11689472}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="21_06_05_struct_School_Arr.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="21_06_08_School_Node.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="s_arrAdd.h">
+      <Filter>헤더 파일\ArrVer</Filter>
+    </ClInclude>
+    <ClInclude Include="s_arrDelete.h">
+      <Filter>헤더 파일\ArrVer</Filter>
+    </ClInclude>
+    <ClInclude Include="s_arrInput.h">
+      <Filter>헤더 파일\ArrVer</Filter>
+    </ClInclude>
+    <ClInclude Include="s_arrInsert.h">
+      <Filter>헤더 파일\ArrVer\FuntionArr</Filter>
+    </ClInclude>
+    <ClInclude Include="s_arrOutput.h">
+      <Filter>헤더 파일\ArrVer\FuntionArr</Filter>
+    </ClInclude>
+    <ClInclude Include="s_arrSearch.h">
+      <Filter>헤더 파일\ArrVer</Filter>
+    </ClInclude>
+    <ClInclude Include="node.h">
+      <Filter>헤더 파일\NodeVer</Filter>
+    </ClInclude>
+    <ClInclude Include="grade.h">
+      <Filter>헤더 파일\FuntionAll</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>헤더 파일\FuntionAll</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>헤더 파일\ArrVer\FuntionArr</Filter>
+    </ClInclude>
+    <ClInclude Include="nodePrint.h">
+      <Filter>헤더 파일\NodeVer\FuntionNode</Filter>
+    </ClInclude>
+    <ClInclude Include="searchNode.h">
+      <Filter>헤더 파일\NodeVer</Filter>
+    </ClInclude>
+    <ClInclude Include="insertNode.h">
+      <Filter>헤더 파일\NodeVer</Filter>
+    </ClInclude>
+    <ClInclude Include="deleteNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
