@@ -130,3 +130,5 @@ dist
 .pnp.*
 
 settings.json
+a.out*
+test*
