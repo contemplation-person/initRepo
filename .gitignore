@@ -133,3 +133,4 @@ settings.json
 .vscode
 /*/a.out
 test.*
+a.out*
