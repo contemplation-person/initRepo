@@ -134,3 +134,5 @@ settings.json
 /*/a.out
 test.*
 a.out*
+
+.DSstore
