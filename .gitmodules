@@ -1,3 +1,6 @@
 [submodule "language/CPP/programmers"]
-	path = language/CPP/programmers
+	path = language/CPP/algorithm
+	url = git@github.com:Algorithm-Juice/JuHa.git
+[submodule "language/CPP/algorithm"]
+	path = language/CPP/algorithm
 	url = git@github.com:Algorithm-Juice/JuHa.git
