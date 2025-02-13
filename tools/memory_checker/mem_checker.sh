@@ -1,17 +1,17 @@
 #!/bin/sh
+
 set -e
 
-ROOT_DIR=$(pwd)
-DIR_NAME="$(/bin/date "+%Y-%m-%d")"
-FILE_NAME="$(/bin/date "+%Y-%m-%d_%H")"
-PROC_SET="
-zsh
-su
-sh
-"
-$(echo "CMD RSS(kb)" > "$ROOT_DIR/$DIR_NAME/$FILE_NAME")
-mkdir -p "$ROOT_DIR/$DIR_NAME"
+CURRENT_DIR=~/log/MEM_CHECK/
+FILE_NAME="$(/bin/date "+%Y-%m-%d_%H-%M")".txt
 
-for proc in $PROC_SET; do    
-    ps -eo cmd,rss | awk -v proc="$proc" '$1 == proc && NF==2 {print $1, $2}' >> "$ROOT_DIR/$DIR_NAME/$FILE_NAME"
-done
+mkdir -p "$CURRENT_DIR"
+
+TOP_DATA=$(top -b -n 1)
+
+echo "$TOP_DATA" | head -n 6 >>  $CURRENT_DIR/$FILE_NAME
+
+printf "%-20s %-20s %s\n\n" "CMD" "MEM(kb)" "USER"  >>  $CURRENT_DIR/$FILE_NAME
+
+echo "$TOP_DATA" | sed -n '8,$p' | awk '{printf "%-20s %-20s %s\n", $12, $6, $2}' >>  $CURRENT_DIR/$FILE_NAME
+
